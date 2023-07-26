@@ -1,0 +1,5 @@
+export {default as Contact} from "./contact/Contact"
+export {default as Layout} from "./layout/Layout"
+export {default as Wrap} from "./wrap/Wrap"
+export { default as AboutCard } from "./cards/AboutCard"
+export {default as OurApproachCard} from "./cards/OurApproachCard"
