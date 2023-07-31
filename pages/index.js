@@ -12,7 +12,7 @@ export default function Home() {
     >
       <main>
         <section
-          className={`flex items-end bg-[url('./images/bg1.jpg')] bg-no-repeat bg-cover bg-bottom pt-40 pb-28 md:pb-0 md:pt-12 lg:pt-24 xl:pt-32 ${classes.hero_section}`}
+          className={`flex items-end bg-[url('../public/images/bg1.jpg')] bg-no-repeat bg-cover bg-bottom pt-40 pb-28 md:pb-0 md:pt-12 lg:pt-24 xl:pt-32 ${classes.hero_section}`}
           id={classes.hero_section}
         >
           <Wrap wrapStyles="flex flex-row items-center w-[100%] md:w-[80%] xl:w-[70%] justify-center md:justify-between mx-auto px-5 md:px-0 lg:px-0 text-center md:text-start">
@@ -36,7 +36,7 @@ export default function Home() {
             </div>
             <div className="hidden md:grid relative h-[500px] w-[500px] lg:h-[550px] lg:w-[700px] xl:h-[600px]">
               <Image
-                src="/images/man4.png"
+                src="../public/images/man4.png"
                 alt="man"
                 fill
                 sizes={500}
@@ -62,7 +62,7 @@ export default function Home() {
                 <br />
                 Constructa, collaboration is key.
               </p>
-              <Link href='/about'>
+              <Link href="/about">
                 <button className="bg-kiola-blue text-white px-3 py-2">
                   About Constructa
                 </button>
