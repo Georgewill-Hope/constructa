@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import logo from "../../../public/images/logo.png";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         "
       >
         <Image
-          src="/images/logo.png"
+          src={logo}
           alt="logo"
           fill
           sizes={500}
