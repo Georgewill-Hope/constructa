@@ -4,10 +4,12 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm("mdorjgaa");
   if (state.succeeded) {
     return (
-      <p>
-        Thanks for contacting me <span className="text-2xl"> &#128522;</span>, i
-        will get back to you shortly!
-      </p>
+      <div className="h-[50vh] w-full flex items-center justify-center px-2 lg:px-0">
+        <p className="text-center text-lg lg:text-2xl">
+          Thanks for contacting us <span className="text-2xl lg:text-4xl"> &#128522;</span>,
+        
+        </p>
+      </div>
     );
   }
   return (
