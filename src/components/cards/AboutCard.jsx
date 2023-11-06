@@ -20,9 +20,12 @@ const AboutCard = ({
           src={ourImage}
           alt="pic"
           sizes={500}
+          placeholder="blur"
+          blurDataURL={ourImage}
           fill
           className="object-cover object-center"
         />
+        <div className="absolute w-full h-full bg-black/30"/>
       </div>
       <div className="px-2 md:px-0">
         <h3 className="font-bold text-lg md:text-xl my-2 md:mb-2 xl:text-3xl">

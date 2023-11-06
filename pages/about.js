@@ -1,23 +1,35 @@
-import { Layout, Contact, Wrap, AboutCard } from "@/src/components";
-
+import { Layout, Contact, AboutCard } from "@/src/components";
+import Image from "next/image";
 
 const About = () => {
   return (
     <Layout navbarStyles="lg:bg-white shadow-md" navbarStyles2="lg:bg-white">
       <main>
-        <section className="min-h-screen bg-[url('/images/aboutbg.png')] bg-no-repeat bg-cover bg-right lg:bg-center px-4 pb-10 md:px-0 flex flex-col justify-end ">
-          <Wrap wrapStyles="w-[100%] md:w-[80%] xl:w-[70%]">
-            <h1 className="text-sm md:mb-3  md:text-lg lg:text-xl text-white">
-              ABOUT
-            </h1>
-            <h2 className="text-2xl md:text-5xl lg:text-6xl text-white">
-              THE WAY WE BUILD
-            </h2>
-          </Wrap>
+        <section className="min-h-screen flex flex-col justify-end relative">
+          <Image
+            src="/images/aboutbg.png"
+            alt="construction"
+            placeholder="blur"
+            blurDataURL="/images/aboutbg.png"
+            fill
+            priority
+            className="object-cover object-right-top lg:object-center"
+          />
+          <div className="absolute w-full h-full bg-gradient-to-r from-black to-kiola-blue/30" />
+          <div className="absolute w-full pb-10 px-2">
+            <div className="w-[100%] md:w-[80%] xl:w-[70%] mx-auto">
+              <h1 className="text-sm md:mb-3  md:text-lg lg:text-xl text-white">
+                ABOUT
+              </h1>
+              <h2 className="text-2xl md:text-5xl lg:text-6xl text-white">
+                THE WAY WE BUILD
+              </h2>
+            </div>
+          </div>
         </section>
 
         <section className="relative py-10 lg:py-0 lg:pt-28 before:bg-sketch before:bg-cover before:opacity-10 before:absolute before:content-[' '] before:top-0 before:bottom-0 before:left-0 before:right-0">
-          <div className="px-5 lg:px-0 lg:w-[80%] xl:w-[70%] ms-auto flex flex-col md:flex-row lg:justify-between lg:gap-10">
+          <div className="px-2 lg:px-0 lg:w-[80%] xl:w-[70%] ms-auto flex flex-col md:flex-row lg:justify-between lg:gap-10">
             <div className="mb-10 md:w-[600px] lg:w-full mx-auto">
               <h3 className="text-[18px] md:text-3xl mb-3 xl:text-5xl">
                 <span className="font-extrabold">GREAT EXPERIENCES</span> FOR
@@ -49,7 +61,16 @@ const About = () => {
           </div>
         </section>
 
-        <section className="h-[50vh] lg:h-[60vh] flex items-center justify-center text-center  bg-[url('/images/aboutbg2.png')]  bg-cover bg-no-repeat bg-left md:bg-center md:mb-0">
+        <section className="h-[50vh] lg:h-[60vh] flex items-center justify-center text-center relative md:bg-center md:mb-0">
+          <Image
+            src="/images/aboutbg2.png"
+            alt="construction"
+            placeholder="blur"
+            blurDataURL="/images/aboutbg2.png"
+            fill
+            priority
+            className="object-cover object-left-top lg:object-center"
+          />
           <div className="relative text-white w-[94%] h-[80%] flex flex-col items-center justify-center bg-kiola-blue bg-opacity-20 px-3">
             <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl">
               OUR PEOPLE
@@ -66,7 +87,7 @@ const About = () => {
         </section>
 
         <section className="relative before:absolute before:bottom-0 before:top-0 before:right-0 before:left-0 before:bg-sketch before:bg-no-repeat before:bg-cover before:bg-bottom before:content-[' '] before:opacity-10 py-10 lg:py-32">
-          <div className="w-100 md:w-[80%] xl:w-[70%] mx-auto px-5  lg:px-0 flex flex-col gap-10 lg:gap-32">
+          <div className="w-100 md:w-[80%] xl:w-[70%] mx-auto px-2  lg:px-0 flex flex-col gap-10 lg:gap-32">
             <AboutCard
               header1="MISSION & VALUES"
               header2=""
@@ -88,7 +109,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className="px-5 lg:px-0">
+        <section>
           <Contact />
         </section>
       </main>

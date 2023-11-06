@@ -7,18 +7,20 @@ const career = () => {
   return (
     <Layout navbarStyles="lg:bg-white shadow-md" navbarStyles2="lg:bg-white">
       <main className="w-full">
-        <div className="min-h-screen w-full relative">
+        <section className="min-h-screen w-full relative">
           <Image
             src="/images/career2.jpg"
             alt="construction"
+            placeholder="blur"
+            blurDataURL="/images/career2.jpg"
             fill
             priority
             className="object-cover object-center"
           />
           <div className="absolute h-full w-full flex items-end bg-gradient-to-r from-black to-transparent">
             <div className="w-[80%] xl:w-[70%] mx-auto py-10 flex flex-col gap-3">
-              <h1 className="font-semibold text-white text-2xl md:text-4xl spaceX">
-                CONSTRUCTA CAREERS
+              <h1 className="font-semibold text-white text-2xl md:text-4xl spaceX underline">
+                CONSTRUCTA CAREERS 
               </h1>
               <Link
                 href="/contact-us"
@@ -28,7 +30,7 @@ const career = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </section>
 
         <section className="w-full md:w-[70%] mx-auto flex flex-col lg:flex-row justify-center gap-5 px-2 lg:px-0 my-20">
           <div className="flex-1 flex flex-col gap-5">
@@ -63,19 +65,22 @@ const career = () => {
               priority
               className="object-cover object-center rounded-md "
             />
-            <div className="absolute w-full h-full bg-black/50"/>
+            <div className="absolute w-full h-full bg-black/50" />
           </div>
         </section>
 
         <section className="bg-gradient-to-r  from-yellow-100 to-transparent py-10">
           <div className="w-full px-2 lg:px-0 min-h-[70vh] md:w-[70%] mx-auto flex flex-col lg:flex-row items-center justify-center gap-7 lg:gap-3">
-            <CareerCard title="SEARCH FOR JOBS" img="/images/search.jpg"/>
-            <CareerCard title="DIVERSITY & INCLUSION" img="/images/helmet.jpg" />
+            <CareerCard title="SEARCH FOR JOBS" img="/images/search.jpg" />
+            <CareerCard
+              title="DIVERSITY & INCLUSION"
+              img="/images/helmet.jpg"
+            />
             <CareerCard title="WHY CHOOSE CONSTRUCTA?" img="/images/why.jpg" />
           </div>
         </section>
 
-        <section className="px-5 lg:px-0 mt-20">
+        <section className="mt-20">
           <Contact />
         </section>
       </main>

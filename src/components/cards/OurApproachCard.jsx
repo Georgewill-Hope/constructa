@@ -12,7 +12,7 @@ const OurApproachCard = ({
 }) => {
   return (
     <section
-      className={`w-[100%] md:w-[80%] lg:w-[85%] md:flex ${containerStyles} mb-10 md:mb-20 lg:mb-36 md:items-center md:mx-auto lg:mx-0`}
+      className={`w-[100%] md:w-[80%] lg:w-[85%] md:flex ${containerStyles} mb-10 md:mb-20 md:items-center md:mx-auto lg:mx-0`}
     >
       <div className="relative h-[45vh] lg:h-[60vh] w-[100%] lg:w-[100%]">
         <Image
@@ -27,7 +27,7 @@ const OurApproachCard = ({
         />
       </div>
       <div
-        className={`bg-kiola-blue p-3 md:p-7 md:w-[550px] lg:w-[80%] md:h-[35vh] lg:h-[50vh] md:flex md:flex-col md:items-start md:justify-center relative ${contentStyles} lg:p-10 rounded-b-xl lg:rounded-none pb-10`}
+        className={`bg-kiola-blue p-3 md:p-7 md:w-[550px] lg:w-[80%] md:h-[35vh] lg:h-[50vh] md:flex md:flex-col md:items-start md:justify-center relative ${contentStyles} lg:p-10 rounded-b-xl lg:rounded-xl pb-10`}
       >
         <h3 className="font-semibold text-white text-xl mb-1 lg:mb-2 lg:text-2xl xl:text-3xl ">
           {Header1} <br />
