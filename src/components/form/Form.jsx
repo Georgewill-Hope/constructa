@@ -1,7 +1,11 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("mdorjgaa");
+
+
+const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
+
+  
   if (state.succeeded) {
     return (
       <div className="h-[50vh] w-full flex items-center justify-center px-2 lg:px-0">
